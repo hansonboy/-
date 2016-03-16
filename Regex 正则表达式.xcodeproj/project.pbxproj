@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CB99471F1C4D0C3200D7C0FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB99471E1C4D0C3200D7C0FE /* main.m */; };
+		CB9947271C4D1F9400D7C0FE /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9947261C4D1F9400D7C0FE /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CB9947291C4D20EA00D7C0FE /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9947281C4D20EA00D7C0FE /* libicucore.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		CB99471B1C4D0C3200D7C0FE /* Regex 正则表达式 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Regex 正则表达式"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB99471E1C4D0C3200D7C0FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB9947251C4D1F9400D7C0FE /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegexKitLite.h; path = ../RegexKitLite.h; sourceTree = "<group>"; };
+		CB9947261C4D1F9400D7C0FE /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegexKitLite.m; path = ../RegexKitLite.m; sourceTree = "<group>"; };
+		CB9947281C4D20EA00D7C0FE /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9947291C4D20EA00D7C0FE /* libicucore.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +47,7 @@
 		CB9947121C4D0C3100D7C0FE = {
 			isa = PBXGroup;
 			children = (
+				CB9947281C4D20EA00D7C0FE /* libicucore.tbd */,
 				CB99471D1C4D0C3200D7C0FE /* Regex 正则表达式 */,
 				CB99471C1C4D0C3200D7C0FE /* Products */,
 			);
@@ -57,6 +64,8 @@
 		CB99471D1C4D0C3200D7C0FE /* Regex 正则表达式 */ = {
 			isa = PBXGroup;
 			children = (
+				CB9947251C4D1F9400D7C0FE /* RegexKitLite.h */,
+				CB9947261C4D1F9400D7C0FE /* RegexKitLite.m */,
 				CB99471E1C4D0C3200D7C0FE /* main.m */,
 			);
 			path = "Regex 正则表达式";
@@ -118,6 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9947271C4D1F9400D7C0FE /* RegexKitLite.m in Sources */,
 				CB99471F1C4D0C3200D7C0FE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
